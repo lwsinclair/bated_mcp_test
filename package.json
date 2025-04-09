@@ -1,0 +1,41 @@
+{
+  "name": "byted_fe_mcp",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "byted_fe_mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:qubaomingg/byted_fe_mcp.git"
+  },
+  "scripts": {
+    "build": "npx tsc && chmod +x dist/*.js",
+    "start": "node --experimental-fetch dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "dev:inspector": "npx @modelcontextprotocol/inspector dist/index.js",
+    "test": "node dist/test.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "byted",
+    "fe"
+  ],
+  "author": "qubaoming",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.6.0",
+    "@types/node": "^18.18.0",
+    "typescript": "^5.3.3"
+  }
+}
