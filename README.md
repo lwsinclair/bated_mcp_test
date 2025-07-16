@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/arjunkmrm-bated-mcp-test-badge.png)](https://mseep.ai/app/arjunkmrm-bated-mcp-test)
+
 # byted_fe_mcp MCP Server
 
 A Model Context Protocol server
